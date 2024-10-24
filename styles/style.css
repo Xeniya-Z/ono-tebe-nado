@@ -13,18 +13,15 @@
   text-align: left;
 }
 
-
 .header__links-list {
   display: flex;
   gap: 31px;
 }
 
-
 .header__links-list-item {
   margin-left: 1px;
   list-style: circle;
 }
-
 
 .header__links-list-item_no-bullit {
   padding-left: 0;
