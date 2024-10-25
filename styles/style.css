@@ -10,7 +10,7 @@
 }
 
 .header__menu {
-  justify-self: start
+  justify-self: start;
 }
 
 .header__links-list {
@@ -39,6 +39,7 @@
 }
 
 .header__logo {
+  display: block;
   width: 148px;
   height: 105px;
 }
@@ -55,9 +56,9 @@
   font-size: 18px;
   font-style: normal;
   line-height: 24px;
+  letter-spacing: 0.01em;
   text-align: left;
   text-underline-offset: 4px;
-  letter-spacing: 0.01em;
 }
 
 .header__address {
