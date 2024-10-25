@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
+  gap: 30px;
   padding: 92px 50px 96px;
   font-weight: 400;
   font-size: 18px;
@@ -9,17 +10,17 @@
 }
 
 .header__menu {
-  display: flex;
-  text-align: left;
+  justify-self: start
 }
 
 .header__links-list {
   display: flex;
-  gap: 31px;
+  flex-direction: row;
+  justify-content: start;
+  gap: 32px;
 }
 
 .header__links-list-item {
-  margin-left: 1px;
   list-style: circle;
 }
 
@@ -53,19 +54,14 @@
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 25px;
+  line-height: 24px;
   text-align: left;
-  text-decoration: none;
-}
-
-.address a {
-  line-height: 26px;
-  text-decoration: underline;
   text-underline-offset: 4px;
+  letter-spacing: 0.01em;
 }
 
 .header__address {
-  margin-left: 187px;
+  margin-left: 157px;
 }
 
 .cover {
@@ -80,12 +76,11 @@
 }
 
 .overlay {
-  position: absolute; 
+  position: absolute;
   inset: 0;
-  z-index: 1; 
-  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
 }
-
 
 .cover__title {
   position: relative;
@@ -149,11 +144,11 @@
 }
 
 .lots {
-  margin: 179px 24px 0;
+  margin: 180px 24px 0;
 }
 
 .lots__heading {
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   margin-left: 40px;
   font-weight: 700;
   font-size: 40px;
@@ -188,7 +183,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   height: 100%;
-  padding: 51px 40px 48px;
+  padding: 52px 40px 48px;
   color: rgb(255,255,255);
 }
 
@@ -233,22 +228,21 @@
 
 .lots__look-more-link {
   display: inline-block;
-  margin-top: 28px;
+  margin-top: 30px;
   margin-left: 40px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  line-height: 26px;
   text-underline-offset: 4px;
 }
 
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  grid-template-rows: 240px auto;
+  grid-template-rows: 248px auto;
   justify-items: center;
-  gap: 5px 25px;
-  margin: 148px 24px 180px;
+  column-gap: 25px;
+  margin: 147px 24px 180px;
   padding-top: 35px;
 }
 
@@ -289,7 +283,7 @@
 }
 
 .about__text p:first-of-type {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .footer {
@@ -302,8 +296,7 @@
 .footer__menu {
 font-weight: 400;
 font-size: 18px;
-line-height: 22px;
-text-align: center;
+line-height: 21px;
 text-align: center;
 }
 
@@ -330,7 +323,7 @@ text-align: center;
 
 .footer__social-list-item {
   width: 48px;
-  height: 48px; 
+  height: 48px;
 }
 
 .footer__social-icon {
